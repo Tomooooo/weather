@@ -1,0 +1,28 @@
+{
+    "name": "ming\/weather",
+    "description": "ming's composer demo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ming",
+            "email": "totolovecode@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "~6.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ming\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ming\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
